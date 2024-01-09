@@ -194,6 +194,9 @@ to force a rotation of the main token. This would create a new token with the sa
 vault put gitlab/config/rotate
 ```
 
+### Integrations
+- [Terraform](docs/terraform_integration.md): Example on how to use this plugin with Terraform.
+
 ## TODO
 
 * [ ] Add tests against real Gitlab instance
