@@ -20,7 +20,7 @@ func pathConfigTokenRotate(b *Backend) *framework.Path {
 			OperationPrefix: operationPrefixGitlabAccessTokens,
 		},
 		Operations: map[logical.Operation]framework.OperationHandler{
-			logical.ReadOperation: &framework.PathOperation{
+			logical.UpdateOperation: &framework.PathOperation{
 				Callback:     b.pathConfigTokenRotate,
 				DisplayAttrs: &framework.DisplayAttributes{OperationVerb: "configure"},
 				Summary:      "Rotate the main Gitlab Access Token.",
